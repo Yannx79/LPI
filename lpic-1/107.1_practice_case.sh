@@ -86,7 +86,7 @@ pause_execution
 
 display_section_header "The /etc/login.defs file"
 
-cat /etc/login.defs
+cat /etc/login.defs | tail -n 10
 
 pause_execution
 
@@ -129,9 +129,7 @@ pause_execution
 
 display_section_header "/etc/passwd"
 
-cat /etc/passwd
-echo
-cat /etc/passwd | sed 's/:.*//' | awk '{print $1}'
+cat /etc/passwd | sed 's/:.*//' | awk '{print $1}' | tail -n 10
 
 pause_execution
 
@@ -139,9 +137,7 @@ pause_execution
 
 display_section_header "The /etc/group"
 
-cat /etc/group
-echo
-cat /etc/group | sed 's/:.*//' | awk '{print $1}'
+cat /etc/group | sed 's/:.*//' | awk '{print $1}' | tail -n 10
 
 pause_execution
 
@@ -149,7 +145,7 @@ pause_execution
 
 display_section_header "The /etc/shadow"
 
-cat /etc/shadow
+cat /etc/shadow | tail -n 10
 
 pause_execution
 
@@ -157,7 +153,7 @@ pause_execution
 
 display_section_header "The /etc/gshadow"
 
-cat /etc/gshadow
+cat /etc/gshadow | tail -n 10
 
 pause_execution
 
