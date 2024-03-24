@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # By: Yannick Funes
-# Datetime: 21/03/2023
-# YT:
+# Datetime: 23/03/2023
+# YT: https://youtu.be/gA3N9CrPvSE
 
 title="107.1 Manage User and Group"
 description="107.1 Manage user and group accounts and related system files with them."
